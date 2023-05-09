@@ -1,0 +1,192 @@
+html {
+    font-size: 62.5%;
+    font-family: inherit;
+  }
+  
+  .cart-active {
+    color:rgba(255, 132, 0, 0.945);
+  }
+  
+  .cart-section {
+    padding: 8rem;
+    text-align: center;
+    margin-bottom: 15rem;
+    position: relative;
+  }
+  
+  .cart-heading {
+    font-size: 4.6rem;
+    line-height: 5.4rem;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 5rem;
+  }
+  
+  .cart-table {
+    font-size: 1.8rem;
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: separate;
+    border: 1px solid black;
+  }
+  
+  .product-img {
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+  }
+  
+  input {
+    background-color: inherit;
+    border: none;
+    text-align: center;
+    font-size: inherit;
+  }
+  
+  tr th {
+    padding: 1rem;
+  }
+  
+  th,
+  td {
+    border-spacing: 0px;
+    border-collapse: separate;
+    border: 1px solid black;
+  }
+  
+  tr:first-child {
+    background-color: #eee;
+  }
+  
+  .btn-danger {
+    padding: 0.5rem 2rem;
+    background-color: #ff6b6b;
+    color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c92a2a;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  }
+  
+  .cart-total-price-section {
+    text-align: right;
+  }
+  
+  .order {
+    text-align: right;
+  }
+  
+  .btn {
+    padding: 0.5rem 2rem;
+    background-color:rgba(255, 132, 0, 0.945);
+    color: #fff;
+    font-size: 2.4rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  tr > th {
+    text-align: center;
+  }
+  .modal{
+    position: fixed;
+    width: 1550px;
+    height: 800px;
+    top: 120px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+  }
+  .modal-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 550px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .modal-header .close{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 510px;
+    width: 30px;
+    border-radius: 10px;
+  }
+  .modal-header .close:hover{
+   transform: scale(1.3)
+  }
+  .modal-header .modal-title{
+    margin-top: 10px;
+    font-size: 35px;
+  }
+  .modal-body form{
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .form-row label{
+    font-size: 17px;
+    position: absolute;
+    left: 510px;
+  }
+
+  .form-row input{
+    width: 300px;
+    font-size: 15px;
+    position: absolute;
+    left: 730px;
+  }
+  .form-row select{
+    width: 300px;
+    font-size: 15px;
+    position: absolute;
+    left: 730px;
+  }
+  .txtinfor {
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  
+  .btn-orderDetail {
+    color: #fff;
+    transition: all 0.4s;
+  }
+  
+  .btn-orderDetail:hover,
+  .btn-orderDetail:active {
+    background-color:rgba(255, 72, 6, 0.91);
+    border: none;
+  }
+  .total-heading{
+    font-size: 20px;
+  }
+  #tendn{
+    position: absolute;
+    top: 90px;
+    left: 730px;
+    color: #c92a2a;
+    font-size: 14px;
+  }
+  #mail{
+    position: absolute;
+    top: 130px;
+    left: 730px;
+    color: #c92a2a;
+    font-size: 14px;
+  }
+  #phone{
+    position: absolute;
+    top: 170px;
+    left: 730px;
+    color: #c92a2a;
+    font-size: 14px;
+  }
+  

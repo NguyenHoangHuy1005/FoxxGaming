@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <script
+      src="https://kit.fontawesome.com/ebc54c23ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="../img/logo/logo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="../index.html" class="Logo">
+          <img
+            src="../img/logo/logo.png"
+            alt="Logo"
+            class="logo"
+            width="80px"
+            height="80px"
+          />
+        </a>
+        <a href="../index.html" class="Logo-text"><span>FOXXGAMING</span></a>
+      </div>
+      <div class="header-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search product" />
+      </div>
+      <div class="header-menu">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="../index.html" class="menu__link"
+              ><i class="fa-solid fa-house"></i><span>Home</span></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="shop.html" class="menu__link"
+              ><i class="fa-solid fa-shop"></i><span>Shop</span></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="news.html" class="menu__link"
+              ><i class="fa-solid fa-newspaper"></i><span>News</span></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="login.html" class="menu__link menu__active"
+              ><i class="fa-solid fa-user"></i><span>Login</span></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="cart.html" class="menu__link"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="social-icons">
+          <a class="footer-link-icon" href="http://www.facebook.com"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a class="footer-link-icon" href="http://www.instagram.com"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a class="footer-link-icon" href="http://www.twitter.com">
+            <i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+        <form action="" id="login" class="input-group">
+          <input
+            type="text"
+            id="useridLog"
+            class="input-field"
+            placeholder="User ID"
+            required
+          />
+          <input
+            type="password"
+            id="pwdLog"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span id="spanpwd"
+            >Remember Password</span
+          >
+          <button type="submit" class="submit-btn" onclick="checkLogin()">
+            Log in
+          </button>
+        </form>
+        <form action="" id="register" class="input-group">
+          <input
+            type="text"
+            id="useridRe"
+            class="input-field"
+            placeholder="User ID"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            class="input-field"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            id="pwdRe"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input
+            type="password"
+            id="confirmpassword"
+            class="input-field"
+            placeholder="Confirm password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span id="spanpwd"
+            >I agree to the terms and conditions
+          </span>
+          <button type="submit" class="submit-btn" onclick="checkRegister()">Register</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="col first-col">
+        <img
+          src="../img/logo/logo.png"
+          alt=""
+          class="footer-logo"
+          width="50px"
+          height="50px"
+        />
+        <h4 class="footer-heading">Contact</h4>
+        <p class="footer-text">
+          <strong>Address:</strong> 61/6 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp,
+          TPHCM.
+        </p>
+        <p class="footer-text"><strong>Phone:</strong> 0382173105</p>
+        <p class="footer-text"><strong>Opening:</strong> 8:00-22:00, Mon-Sat</p>
+        <p class="footer-text">
+          <strong>Copyright</strong> &copy; 2023 by FoxxGaming, Inc. All rights
+          reserved.
+        </p>
+        <div class="follow">
+          <h4 class="footer-heading">Follow us</h4>
+          <div class="footer-icon">
+            <a class="footer-link-icon" href="https://www.facebook.com/your.douyduy/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a class="footer-link-icon" href="http://www.instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a class="footer-link-icon" href="http://www.twitter.com">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4 class="footer-heading">Resources</h4>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="footer-link" href="#">Blog</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#">Events</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#">Glossary</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#">Privacy Center</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#">Resources library</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#">Trial Software Downloads</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="footer-heading">Support</h4>
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a class="footer-link" href="#">Support Home</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link" href="#">Contact Support</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="footer-heading">Install app</h4>
+        <p class="footer-text">Form App Store or Google Play</p>
+        <div class="footer-row">
+          <a href="https://apps.apple.com/vn/app/apple-store/id375380948?l=vi"
+            ><img src="../img/pay/app.jpg" alt=""
+          /></a>
+          <a href="https://play.google.com/store/games?hl=vi&gl=US&pli=1"
+            ><img src="../img/pay/play.jpg" alt=""
+          /></a>
+        </div>
+        <h4 class="footer-heading">Payment Method</h4>
+        <ul class="footer-pay">
+          <li>
+            <a href="#" class="footer-pay-item"
+              ><i class="fa-solid fa-qrcode"></i><span>QR Code</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer-pay-item"
+              ><i class="fa-solid fa-money-bill"></i><span>Money</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer-pay-item"
+              ><i class="fa-regular fa-clock"></i><span>Installment</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer-pay-item"
+              ><i class="fa-regular fa-credit-card"></i
+              ><span>Intenet Banking</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
